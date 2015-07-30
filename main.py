@@ -11,4 +11,4 @@ def light_off_method():
 	print("Light Off!")
 
 check_light = Photocell.CheckLight(light_on_method, light_off_method)
-check_light.run()
+check_light.start()
