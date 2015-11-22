@@ -3,7 +3,7 @@
 
 __author__ = 'marcel'
 
-import Photocell
+import photocell
 
 # define methods to run when light state changes
 def light_on_method():
@@ -13,5 +13,5 @@ def light_on_method():
 def light_off_method():
 	print("Light Off!")
 
-check_light = Photocell.CheckLight(light_on_method, light_off_method)
+check_light = photocell.CheckLight(light_on_method, light_off_method)
 check_light.start()
